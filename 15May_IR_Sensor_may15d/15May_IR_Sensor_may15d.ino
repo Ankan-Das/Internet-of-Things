@@ -3,21 +3,21 @@ int ledPIN = 13;
 int val = 0;
 
 void setup() {
-  pinMode(sensorPIN, INPUT);
-  pinMode(ledPIN, OUTPUT);
+  pinMode(sensor_PIN, INPUT);
+  pinMode(led_PIN, OUTPUT);
 }
 
 void loop() {
 
-  val = digitalRead(sensorPIN); 
+  val = digitalRead(sensor_PIN); 
     
   if(val==HIGH)
     {
-      digitalWrite(ledPIN, HIGH);
+      digitalWrite(led_PIN, HIGH);
       delay(100);
     }
   else if(val==LOW)
     {
-      digitalWrite(ledPIN, LOW);
+      digitalWrite(led_PIN, LOW);
       delay(100);}
     }
